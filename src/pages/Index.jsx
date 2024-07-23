@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 
-const Index: React.FC = () => {
-  const [name, setName] = React.useState<string>("");
-  const [email, setEmail] = React.useState<string>("");
+const Index = () => {
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Submitted:", { name, email });
     // Add your submit logic here
